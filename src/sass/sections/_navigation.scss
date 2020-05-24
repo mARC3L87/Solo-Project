@@ -1,0 +1,72 @@
+.nav_wrapper{
+  display: flex;
+  height: 61px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.wallet_wrapper{
+  @include nav_flex(row, center, center);  
+  max-height: 187px;
+  
+  .wallet_front{
+    @include nav_flex(row, center, space-around);  
+    width: 189px;
+    height: 61px;
+    border-left: #E3E3E3 solid 2px;
+    border-right: #E3E3E3 solid 2px;
+
+    i{
+      width: 17px;
+      height: 18px;
+    }
+    .money{
+      font-size: 20px;
+      font-family: 'Roboto-Regular', 'AdobeInvisFont', 'MyriadPro-Regular';
+    }
+  }
+}
+
+.note_wrapper{
+  @include nav_flex(row, center, flex-start); 
+  width: 38px;
+  max-height: 61px;
+  border-right: #E3E3E3 solid 2px;
+  margin-left: 21px;
+
+  i{
+    width: 16px;
+    height: 17px;
+  }
+}
+
+.profile_wrapper{
+  @include nav_flex(row, center, flex-start); 
+  width: 155px;
+  height: 61px;
+  border-right: #E3E3E3 solid 2px;
+  margin-left: 18px;
+
+  i{
+    width: 17px;
+    height: 17px;
+  }
+
+  .profile_text{
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: $font-text;
+    padding-left: 14px;
+  }
+}
+
+.exit_wrapper{
+  @include nav_flex(row, center, flex-start); 
+  width: 38px;
+  margin-left: 21px;
+
+  i{
+    width: 19px;
+    height: 15px;
+  }
+}
