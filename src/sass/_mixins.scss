@@ -25,3 +25,17 @@
     margin: 0 0 8px;
   }
 }
+
+@mixin btn($btn-bg, $btn-text){
+  background: $btn-bg;
+  color: $btn-text;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+
+  &:hover{
+    background-color: $color-orange;
+  }
+}

@@ -55,6 +55,10 @@
   background-color: $color-darkorange;
   border-radius: 5px;
 
+  &:hover{
+    background-color: $color-orange;
+  }
+
   i{
     position: absolute;
     left: 14px;
