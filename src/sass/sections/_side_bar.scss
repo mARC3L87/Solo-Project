@@ -2,23 +2,44 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+
+  @include responsive(phone){
+    position: static;
+    height: 140%;
+
+    &.show{
+      @include sideBar();
+    }
+  }
 }
 
 .side_logo{
+
+  @include responsive(phone){
+    display: flex;
+    justify-content: space-between;
+  }
+
   img{
     padding: 18px 46px 0 20px;
   }
 
-  i{
-    color: $color-light;
-    width: 18px;
-    height: 16px;
-    padding: 23px 19px 0 0;
-  }
+  .hamburger{
+    @include responsive(phone){
+      color: $color-light;
+      width: 18px;
+      height: 16px;
+      margin: 23px 10px 0 0;
+    }
+  }  
 }
 
 .side_links{
   display: flex;
+  @include responsive(phone){
+    display: none;
+  }
+  
 
   ul{
     list-style: none;
@@ -56,6 +77,10 @@
   border-top: #333333 2px solid;
   position: relative;
   margin: 40px 0;
+
+  @include responsive(phone){
+    display: none;
+  }
 
   .head_manager{
     color: #808080;

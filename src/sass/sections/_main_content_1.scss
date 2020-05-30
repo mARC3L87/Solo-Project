@@ -23,6 +23,11 @@
   justify-content: center;
   margin-top: 31px;
 
+  @include responsive(phone){
+    flex-wrap: wrap;
+    height: auto;
+  }
+
   .input_wrapper{
     position: relative;
     margin-top: 1px;
@@ -31,6 +36,10 @@
     border: #E3E3E3 1px solid;
     border-radius: 5px;
     padding-top: 10px;
+
+    @include responsive(phone){
+      margin-bottom: 10px;
+    }
 
     [type="date"]{
       border: none;
@@ -74,6 +83,13 @@
   justify-content: space-between;
   margin: 41px auto 0;
 
+  @include responsive(phone){
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .first_column{
     @include content_column();
 
@@ -85,6 +101,7 @@
       @include inner_column(); 
       margin-top: 22px;
     }
+
   }
 
   .second_column{
@@ -106,8 +123,22 @@
   height: 400px;
   margin: auto auto 55px auto;
 
+  @include responsive(phone){
+    width: 100%;
+  }
+
+  img{
+    @include responsive(phone){
+      width: 100%;
+    }
+  }
+
   h2{
     font-size: 16px;
     color: #A6A6A6;
+
+    @include responsive(phone){
+      margin-left: 10px;
+    }
   }
 }

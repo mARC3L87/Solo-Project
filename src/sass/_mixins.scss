@@ -39,3 +39,90 @@
     background-color: $color-orange;
   }
 }
+
+/* side bar content */
+@mixin sideBar(){
+  .side_links{
+    display: flex;
+  
+    ul{
+      list-style: none;
+      padding: 0;
+      width: 189px;
+      margin: 19px 0 0 0;
+  
+      li{
+        height: 40px;
+        padding: 10px 0 0 18px;
+  
+        &:hover{
+          background-color: #282828;
+          border-left: $color-darkorange 5px solid;
+          padding: 10px 0 0 13px;
+        }
+  
+        i{
+          color: #818181;
+        }
+  
+        a{
+          color: $color-light;
+          text-decoration: none;
+          padding: 0 0 0 13px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  .side_manager{
+    display: flex;
+    height: 102px;
+    border-top: #333333 2px solid;
+    position: relative;
+    margin: 40px 0;
+  
+    .head_manager{
+      color: #808080;
+      font-size: 14px;
+      margin: 0;
+      position: absolute;
+      top: 28px;
+      left: 20px;
+    }
+  
+    img{
+      top: 57px;
+      left: 20px;
+      position: absolute;
+    }
+    
+    .manager_name{
+      position: absolute;
+      color: $color-blue;
+      font-size: 14px;
+      left: 73px;
+      top: 74px;
+    }
+  }
+}
+
+/* Media queries */
+
+@mixin responsive($brakpoint){
+  @if $brakpoint == phone {
+    @media only screen and (max-width: 600px) { @content; }
+  }
+
+  @if $brakpoint == tablet {
+    @media only screen and (max-width: 900px) { @content; }
+  }
+
+  @if $brakpoint == tab-land {
+    @media only screen and (max-width: 1400px) { @content; }
+  }
+
+  @if $brakpoint == big-desktop {
+    @media only screen and (min-width: 1800px) { @content; }
+  }
+}
