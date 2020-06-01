@@ -107,6 +107,12 @@
   }
 }
 
+@mixin main_2() {
+  .main-2_wrapper{
+    visibility: hidden;
+  }
+}
+
 /* Media queries */
 
 @mixin responsive($brakpoint){

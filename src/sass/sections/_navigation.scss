@@ -4,10 +4,13 @@
   width: 100%;
   justify-content: flex-end;
   position: fixed;
+  border-bottom: 2px solid #E3E3E3;
+  z-index: 3;
 
   @include responsive(phone){
     position: unset;
     flex-wrap: wrap;
+    height: 100%;
   }
 }
 
@@ -17,6 +20,7 @@
 
   @include responsive(phone){
     width: 100%;
+    border: 2px solid #E3E3E3;
   }
   
   .wallet_front{

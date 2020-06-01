@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 4;
 
   @include responsive(phone){
-    position: static;
-    height: 140%;
+    position: fixed;
+    height: 50px;
 
     &.show{
+      height: 140%;
       @include sideBar();
     }
   }
@@ -25,7 +27,9 @@
   }
 
   .hamburger{
+    visibility: hidden;
     @include responsive(phone){
+      visibility: visible;
       color: $color-light;
       width: 18px;
       height: 16px;
@@ -69,6 +73,10 @@
       }
     }
   }
+}
+
+.general{
+  cursor: pointer;
 }
 
 .side_manager{
