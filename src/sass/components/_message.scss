@@ -1,0 +1,130 @@
+.message{
+  width: 1077px;
+  height: 537px;
+
+  .manager_view{
+    display: flex;
+    border-bottom: solid 2px #E3E3E3;
+    padding: 10px 0 10px 15px;
+
+    img{
+      width: 70px;
+      height: 70px;
+    }
+
+    .name_box{
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 10px;
+
+      h1{
+        margin: 0;
+        font-size: 30px;
+      }
+
+      p{
+        margin: 5px 0 0;
+        background-color: $color-darkgreen;
+        color: $color-light;
+        width: 44px;
+        height: 19px;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 12px;
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+.message_container{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 0 15px;
+  height: 319px;
+  border-bottom: 2px solid #E3E3E3;
+
+  .bubble_manager{
+    position: relative;
+	background: $color-lightgrey;
+    border-radius: 4px;
+    height: 49px;
+    padding: 16px 10px;
+    width: 158px;
+    margin: 10px 0;
+    font-size: 14px;
+    
+    &::after{
+      content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 10px;
+	  width: 0;
+	  height: 0;
+	  border: 15px solid transparent;
+	  border-bottom-color: $color-lightgrey;
+	  border-top: 0;
+	  border-left: 0;
+	  margin-left: -10px;
+	  margin-top: -12px;
+    }
+  }
+
+  .bubble_customer{
+    position: relative;
+	background: $color-grey;
+    border-radius: 4px;
+    height: 49px;
+    padding: 16px 10px;
+    width: 288px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: $color-light;
+
+    &::after{
+      content: '';
+	  position: absolute;
+	  bottom: 0;
+	  right: 0;
+	  width: 0;
+	  height: 0;
+	  border: 15px solid transparent;
+	  border-top-color: $color-grey;
+	  border-bottom: 0;
+	  border-right: 0;
+	  margin-left: -10px;
+	  margin-bottom: -12px;
+    }
+  }
+}
+
+.message_form{
+  display: flex;
+  height: 76px;
+  width: 1075px;
+  align-items: center;
+  position: relative;
+
+  .icon-message{
+    position: absolute;
+    left: 28px;
+  }
+
+  input[type="text"]{
+    height: 41px;
+    width: 986px;
+    padding-left: 38px;
+    outline: none;
+    margin-left: 15px;
+    border: #E3E3E3 2px solid;
+  }
+
+  .btn_send{
+    @include btn($color-darkorange, $color-light);
+    width: 96px;
+    height: 41px;
+    outline: none;
+    border: none;
+    margin: 0 15px 0 15px;
+  }
+}

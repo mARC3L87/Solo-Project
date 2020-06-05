@@ -3,6 +3,10 @@
 @import 'normalize';
 @import 'layout';
 @import 'components/form_field';
+@import 'components/modals';
+@import 'components/login';
+@import 'components/quit';
+@import 'components/message';
 @import 'sections/registration_form';
 @import 'sections/navigation';
 @import 'sections/side_bar';
@@ -10,4 +14,5 @@
 @import 'sections/main_content_2';
 @import 'sections/links';
 @import 'sections/banners';
+@import 'sections/personal_data';
 @import 'pages/registrations';

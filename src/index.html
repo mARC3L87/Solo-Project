@@ -47,7 +47,7 @@
                 </div>
                 <div class="side_manager">
                     <h2 class="head_manager">YOUR MANAGER</h2>
-                    <img src="images/photo@1X.png" alt="manager">
+                    <img src="images/photo@1X.png" alt="manager" id="managerPhoto">
                     <span class="manager_name">Mikhael E.</span>
                 </div>
             </section>
@@ -337,6 +337,109 @@
                     <a href="#">+ add new</a>
                 </div>
             </section>
+            <section class="personal personal_wrapper content" id="personal">
+                <div class="corner_title">
+                    <h2>PERSONAL DATA</h2>
+                </div>
+                <form action="" method="POST" class="personal_form">
+                    <div class="general_filed">
+                        <div class="names">
+                            <label for="fname">Name</label> 
+                            <input type="text" name="first-name" value="Leonardo" id="fname">
+                        </div>
+                        <div class="names">
+                            <label for="lname">Surname</label>
+                            <input type="text" name="last-name" value="Dicaprio" id="lname">
+                        </div>  
+                        <div class="names">
+                            <label for="mail">E-mail</label>
+                            <input type="email" name="email" value="leo@gmail.com" id="mail">
+                        </div> 
+                        <div class="names">
+                            <label for="cell">Phone number</label>
+                            <input type="tel" name="phone" value="+1 432 555 00 44" id="cell">
+                        </div>                                
+                    </div>
+                    <div class="general_filed online">
+                        <div class="names">
+                            <label for="Skype">Skype</label>
+                            <input type="text" name="skype" value="Leonardo.D" id="Skype">
+                        </div>
+                        <div class="names">
+                            <label for="icq">ICQ</label>
+                            <input type="text" name="icq" id="icq">
+                        </div>
+                        <div class="names">
+                            <label for="MSN">Msn</label>
+                            <input type="text" name="msn" id="MSN">
+                        </div>
+                    </div>
+                    <div class="general_filed wallet">
+                        <div class="names">
+                            <label for="money">Wallet</label>
+                            <input type="text" name="wallet" id="money">
+                        </div>
+                    </div>
+                    <div class="general_filed pass">
+                        <div class="names">
+                            <label for="lock">Password</label>
+                            <input type="password" name="password" id="lock">
+                        </div>
+                        <div class="names">
+                            <label for="confirm">Repeat</label>
+                            <input type="password" name="repeat" id="confirm">
+                        </div>
+                    </div>
+                    <button type="submit" class="sub_btn">Save</button>
+                </form>
+            </section>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal login" id="login-pop">
+                <div class="btn-close js--close-modal"></div>
+                <div class="corner_title">
+                    <h2>LOGIN</h2>
+                </div>
+                <form action="" class="login_form">
+                    <i class="icon-personaldata icon_login"></i>
+                    <input type="text" name="login-name" placeholder="login name">
+                    <i class="icon-password icon_key"></i>
+                    <input type="password" name="key-pass" placeholder="password">
+                    <button class="js--close-modal btn-login">Enter</button>
+                </form>
+            </div>
+            <div class="modal quit" id="quit-pop">
+                <div class="corner_title">
+                    <h2>Do you really want to Quit?</h2>
+                </div>
+                <div class="btn_quit_container">
+                    <button class="js--close-modal btn-cancel">Cancel</button>
+                    <button class="js--close-modal btn-quit">Quit</button>
+                </div>
+            </div>
+            <div class="modal message" id="message-pop">
+                <div class="btn-close js--close-modal"></div>
+                <div class="corner_title">
+                    <h2>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h2>
+                </div>
+                <div class="manager_view">
+                    <img src="images/userpic@1X.png" alt="userpic">
+                    <div class="name_box">
+                        <h1>Michael E.</h1>
+                        <p>online</p>
+                    </div>
+                </div>
+                <div class="message_container">
+                    <span class="bubble_manager">Hello. Can I help you?</span>
+                    <span class="bubble_customer"> Hello. I would like to know about Postback</span>
+                    <span class="bubble_manager">Ok. 5 min...</span>
+                </div>
+                <form class="message_form" action="" method="POST">
+                    <i class="icon-message"></i>
+                    <input type="text" name="message" placeholder="Enter the message..">
+                    <button type="submit" class="btn_send">Send</button>
+                </form>
+            </div>
         </div>
         <script src="js/script.js"></script>
     </body>

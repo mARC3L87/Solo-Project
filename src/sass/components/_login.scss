@@ -1,0 +1,40 @@
+.login{
+  width: 726px;
+  height: 192px;
+}
+
+.login_form{
+  display: flex;
+  height: 143px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .icon_login{
+    position: absolute;
+    left: 6%;
+  }
+
+  .icon_key{
+    position: absolute;
+    left: 40%;
+    top: 60%;
+  }
+
+  input[type="text"],
+  input[type="password"]{
+    width: 214px;
+    height: 41px;
+    padding-left: 35px;
+    border: #E3E3E3 1px solid;
+    outline: none;
+  }
+
+  .btn-login{
+    @include btn($color-darkorange, $color-light);
+    width: 168px;
+    height: 41px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+}

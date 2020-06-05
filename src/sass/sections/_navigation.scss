@@ -68,6 +68,10 @@
   border-right: #E3E3E3 solid 2px;
   margin-left: 18px;
 
+  &:hover{
+    cursor: pointer;
+  }
+
   @include responsive(phone){
     width: 50%;
     margin-left: 0;

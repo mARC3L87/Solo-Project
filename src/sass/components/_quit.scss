@@ -1,0 +1,33 @@
+.quit{
+  width: 362px;
+  height: 154px;
+}
+
+.btn_quit_container{
+  display: flex;
+  height: 73px;
+  width: 342px;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .btn-cancel{
+    @include btn($color-darkgrey, $color-light);
+    width: 96px;
+    height: 41px;
+    outline: none;
+    border: none;
+
+    &:hover{
+      background-color: $color-grey;
+    }
+  }
+
+  .btn-quit{
+    @include btn($color-darkorange, $color-light);
+    width: 96px;
+    height: 41px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+  }
+}
