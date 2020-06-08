@@ -31,13 +31,15 @@
     border-right: #E3E3E3 solid 2px;
 
     i{
+      color: #9C9C9C;
       width: 17px;
       height: 18px;
     }
     
     .money{
+      @include font-section();
+      color: #9C9C9C;
       font-size: 20px;
-      font-family: 'Roboto-Regular', 'AdobeInvisFont', 'MyriadPro-Regular';
     }
   }
 }
@@ -56,6 +58,7 @@
   }
 
   i{
+    color: #9C9C9C;
     width: 16px;
     height: 17px;
   }
@@ -78,14 +81,15 @@
   }
 
   i{
+    color: #9C9C9C;
     width: 17px;
     height: 17px;
   }
 
   .profile_text{
-    margin-right: 20px;
+    @include font-text();
+    margin-right: 18px;
     font-size: 13px;
-    font-family: $font-text;
     padding-left: 14px;
   }
 }
@@ -96,6 +100,7 @@
   margin-left: 21px;
 
   i{
+    color: #9C9C9C;
     width: 19px;
     height: 15px;
   }

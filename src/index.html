@@ -6,6 +6,7 @@
         <title>Solo-Project</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
         <link rel="stylesheet" href="vendor/icons/icon-font/css/Glyphter.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rwn6nym.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -37,7 +38,7 @@
                 <div class="side_links">
                     <ul class="bar_links">
                         <li class="general"><i class="icon-general"></i><a href="#general">General</a></li>
-                        <li><i class="icon-details"></i><a href="#">Details</a></li>
+                        <li><i class="icon-details"></i><a href="#details">Details</a></li>
                         <li class="link"><i class="icon-links"></i><a href="#links">Links</a></li>
                         <li><i class="icon-banners"></i><a href="#banners">Banners</a></li>
                         <li><i class="icon-personaldata"></i><a href="#personal">Personal Data</a></li>
@@ -57,8 +58,8 @@
                 </div>
                 <div class="date_filter">
                     <div class="input_wrapper">
-                        <input type="date">
-                        <input type="date">
+                        <input type="text" value="16.05.2020">
+                        <input type="text" value="16.05.2020">
                         <i class="icon-calendar"></i>
                     </div>
                 <a href="#" class="btn btn_refresh"><i class="icon-refresh"></i></a>
@@ -87,16 +88,14 @@
                 </div>
                 <div class="main_chart">
                     <h2>Earnings chart</h2>
-                    <img src="images/graph@1X.png" alt="graph">
+                    <canvas class="chart" id="myChart"></canvas>
                 </div>
             </section>
             <section class="main-2 main-2_wrapper content" id="general">
                 <div class="corner_title">
                     <h2>Links</h2>
                 </div>
-                <div class="btn btn_top">
-                    <a href="#">+ add new</a>
-                </div>
+                <a href="#" class="btn btn_top">+ add new</a>
                 <div class="main_links">
                     <div class="row row_link-1">
                         <h2>Home page</h2>
@@ -179,17 +178,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn btn_bottom">
-                    <a href="#">+ add new</a>
-                </div>
+                <a href="#" class="btn btn_bottom">+ add new</a>
             </section>
             <section class="links links_wrapper content" id="links">
                 <div class="corner_title">
                     <h2>LINKS</h2>
                 </div>
-                <div class="btn btn_top">
-                    <a href="#">+ add new</a>
-                </div>
+                <a href="#" class="btn btn_top">+ add new</a>
                 <div class="main_links">
                     <div class="row row_link-1">
                         <h2>Home page</h2>
@@ -272,17 +267,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn btn_bottom">
-                    <a href="#">+ add new</a>
-                </div>
+                <a href="#" class="btn btn_bottom">+ add new</a>
             </section>
             <section class="banners banners_wrapper content" id="banners">
                 <div class="corner_title">
                     <h2>BANNERS</h2>
                 </div>
-                <div class="btn btn_top">
-                    <a href="#">+ add new</a>
-                </div>
+                <a href="#" class="btn btn_top">+ add new</a>
                 <div class="main_links">
                     <div class="row row_link-1">
                         <h2>Banner main</h2>
@@ -333,15 +324,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn btn_bottom">
-                    <a href="#">+ add new</a>
-                </div>
+                <a href="#" class="btn btn_bottom">+ add new</a>
             </section>
             <section class="personal personal_wrapper content" id="personal">
                 <div class="corner_title">
                     <h2>PERSONAL DATA</h2>
                 </div>
-                <form action="" method="POST" class="personal_form">
+                <form method="POST" class="personal_form">
                     <div class="general_filed">
                         <div class="names">
                             <label for="fname">Name</label> 
@@ -393,6 +382,155 @@
                     <button type="submit" class="sub_btn">Save</button>
                 </form>
             </section>
+            <section class="details details_wrapper content" id="details">
+                <div class="main_title">
+                    <h2>DETAIL STATISTIC</h2>
+                </div>
+                <div class="date_filter">
+                    <div class="input_wrapper">
+                        <input type="text" value="16.05.2020">
+                        <input type="text" value="16.05.2020">
+                        <i class="icon-calendar"></i>
+                    </div>
+                    <a href="#" class="btn btn_refresh"><i class="icon-refresh"></i></a>
+                </div>
+                <div class="scroll-wrapper">
+                    <table>
+                        <tr>
+                            <th>Tracker name</th>
+                            <th>Initiated date</th>
+                            <th>Visists</th>
+                            <th>Unique</th>
+                            <th>Signups</th>
+                            <th>FTD</th>
+                            <th>Depositors</th>
+                            <th>Deposists($)</th>
+                            <th>Payout($)</th>
+                            <th>Turnover</th>
+                            <th>Deal</th>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <i class="icon-arrow-left"></i>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                    </ul>
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </section>
         </div>
         <div class="overlay" id="overlay">
             <div class="modal login" id="login-pop">
@@ -441,6 +579,7 @@
                 </form>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

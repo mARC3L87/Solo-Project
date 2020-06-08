@@ -1,6 +1,10 @@
 .login{
   width: 726px;
   height: 192px;
+
+  @include responsive(phone){
+    width: 100%;
+  }
 }
 
 .login_form{
@@ -9,32 +13,59 @@
   align-items: center;
   justify-content: space-evenly;
 
+  @include responsive(phone){
+    width: 100%;
+  }
+
   .icon_login{
     position: absolute;
     left: 6%;
+    color: #A6A6A6;
+
+    @include responsive(phone){
+      left: 4%;
+    }
   }
 
   .icon_key{
     position: absolute;
     left: 40%;
     top: 60%;
+    color: #A6A6A6;
+
+    @include responsive(phone){
+      left: 37%;
+    }
   }
 
   input[type="text"],
   input[type="password"]{
+    @include font-text();
+    font-size: 14px;
     width: 214px;
     height: 41px;
     padding-left: 35px;
     border: #E3E3E3 1px solid;
     outline: none;
+
+    @include responsive(phone){
+      width: 30%;
+    }
   }
 
   .btn-login{
     @include btn($color-darkorange, $color-light);
+    @include font-text();
+    font-size: 18px;
     width: 168px;
     height: 41px;
     border: none;
     border-radius: 3px;
     outline: none;
+    cursor: pointer;
+
+    @include responsive(phone){
+      width: 30%;
+    }
   }
 }

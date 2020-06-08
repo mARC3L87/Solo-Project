@@ -12,10 +12,13 @@
 
   .btn-cancel{
     @include btn($color-darkgrey, $color-light);
+    @include font-text();
+    font-size: 18px;
     width: 96px;
     height: 41px;
     outline: none;
     border: none;
+    cursor: pointer;
 
     &:hover{
       background-color: $color-grey;
@@ -24,10 +27,13 @@
 
   .btn-quit{
     @include btn($color-darkorange, $color-light);
+    @include font-text();
+    font-size: 18px;
     width: 96px;
     height: 41px;
     margin-left: 20px;
     outline: none;
     border: none;
+    cursor: pointer;
   }
 }

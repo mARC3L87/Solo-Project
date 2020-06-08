@@ -20,6 +20,7 @@
   border-bottom: #E3E3E3 2px solid;
 
   h2{
+    @include font-section();
     color: #A6A6A6;
     font-size: 16px;
     margin: 0 0 8px;

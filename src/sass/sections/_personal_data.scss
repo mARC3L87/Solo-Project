@@ -36,16 +36,19 @@
   border-bottom: #E3E3E3 2px solid;
 
   .names{
+    @include font-section();
     display: flex;
     width: 455px;
     justify-content: space-between;
     align-items: center;
     margin: 0 0 10px 0;
+    color: #A6A6A6;
 
     input[type="text"],
     input[type="email"],
     input[type="tel"],
     input[type="password"]{
+      @include font-text();
       width: 310px;
       height: 41px;
       padding: 10px;
@@ -57,6 +60,8 @@
 
 .sub_btn{
   @include btn($color-darkorange, $color-light);
+  @include font-text();
+  font-size: 18px;
   width: 96px;
   height: 41px;
   border: none;

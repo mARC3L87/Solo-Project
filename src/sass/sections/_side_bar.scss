@@ -55,21 +55,30 @@
       height: 40px;
       padding: 10px 0 0 18px;
 
-      &:hover{
-        background-color: #282828;
-        border-left: $color-darkorange 5px solid;
-        padding: 10px 0 0 13px;
-      }
-
       i{
         color: #818181;
       }
 
       a{
-        color: $color-light;
+        @include font-text();
+        color: #9C9C9C;
         text-decoration: none;
         padding: 0 0 0 13px;
         font-size: 14px;
+      }
+
+      &:hover {
+        background-color: #282828;
+        border-left: $color-darkorange 5px solid;
+        padding: 10px 0 0 13px;        
+      }
+
+      &:hover i{
+        color: $color-light;
+      }
+      
+      &:hover a{
+        color: $color-light;
       }
     }
   }
@@ -91,6 +100,7 @@
   }
 
   .head_manager{
+    @include font-section();
     color: #808080;
     font-size: 14px;
     margin: 0;
@@ -106,6 +116,7 @@
   }
   
   .manager_name{
+    @include font-text();
     position: absolute;
     color: $color-blue;
     font-size: 14px;

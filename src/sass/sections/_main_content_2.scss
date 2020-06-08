@@ -9,6 +9,7 @@
   margin: 20px 0 0 0;
 
   h2{
+    @include font-header();
     font-size: 16px;
     color: #A6A6A6;
     padding: 0 0 14px 19px;
@@ -21,12 +22,13 @@
   width: 127px;
   height: 41px;
   margin: 22px auto 23px;
+}
 
-  a{
-    color: $color-light;
-    text-decoration: none;
-    font-size: 18px;
-  }
+a{
+  @include font-text();
+  color: $color-light;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .btn_bottom{
@@ -34,12 +36,13 @@
   width: 127px;
   height: 41px;
   margin: 22px auto 26px;
-  
-  a{
-    color: $color-light;
-    text-decoration: none;
-    font-size: 18px;
-  }
+}
+
+a{
+  @include font-text();
+  color: $color-light;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .main_links{
@@ -70,6 +73,7 @@
     }
 
     h2{
+      @include font-header();
       margin: 0;
       font-size: 16px;
       color: #A6A6A6;
@@ -81,10 +85,12 @@
     }
 
     a{
+      @include font-text();
       position: absolute;
       left: 318px;
       color: #56819F;
       text-decoration: none;
+      font-size: 16px;
 
       @include responsive(phone){
         padding-right: 5px;

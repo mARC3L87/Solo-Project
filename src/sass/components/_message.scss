@@ -2,6 +2,10 @@
   width: 1077px;
   height: 537px;
 
+  @include responsive(phone){
+    width: 100%;
+  }
+
   .manager_view{
     display: flex;
     border-bottom: solid 2px #E3E3E3;
@@ -18,11 +22,14 @@
       padding: 0 0 0 10px;
 
       h1{
+        @include font-section();
         margin: 0;
         font-size: 30px;
       }
 
       p{
+        @include font-text();
+        font-size: 12px;
         margin: 5px 0 0;
         background-color: $color-darkgreen;
         color: $color-light;
@@ -45,8 +52,9 @@
   border-bottom: 2px solid #E3E3E3;
 
   .bubble_manager{
+    @include font-text();
     position: relative;
-	background: $color-lightgrey;
+    background: $color-lightgrey;
     border-radius: 4px;
     height: 49px;
     padding: 16px 10px;
@@ -56,23 +64,24 @@
     
     &::after{
       content: '';
-	  position: absolute;
-	  top: 0;
-	  left: 10px;
-	  width: 0;
-	  height: 0;
-	  border: 15px solid transparent;
-	  border-bottom-color: $color-lightgrey;
-	  border-top: 0;
-	  border-left: 0;
-	  margin-left: -10px;
-	  margin-top: -12px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: $color-lightgrey;
+      border-top: 0;
+      border-left: 0;
+      margin-left: -10px;
+      margin-top: -12px;
     }
   }
 
   .bubble_customer{
+    @include font-text();
     position: relative;
-	background: $color-grey;
+    background: $color-grey;
     border-radius: 4px;
     height: 49px;
     padding: 16px 10px;
@@ -83,17 +92,17 @@
 
     &::after{
       content: '';
-	  position: absolute;
-	  bottom: 0;
-	  right: 0;
-	  width: 0;
-	  height: 0;
-	  border: 15px solid transparent;
-	  border-top-color: $color-grey;
-	  border-bottom: 0;
-	  border-right: 0;
-	  margin-left: -10px;
-	  margin-bottom: -12px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-top-color: $color-grey;
+      border-bottom: 0;
+      border-right: 0;
+      margin-left: -10px;
+      margin-bottom: -12px;
     }
   }
 }
@@ -105,12 +114,18 @@
   align-items: center;
   position: relative;
 
+  @include responsive(phone){
+    width: 100%;
+  }
+
   .icon-message{
     position: absolute;
     left: 28px;
+    color: #A6A6A6;
   }
 
   input[type="text"]{
+    @include font-text();
     height: 41px;
     width: 986px;
     padding-left: 38px;
@@ -121,10 +136,13 @@
 
   .btn_send{
     @include btn($color-darkorange, $color-light);
+    @include font-text();
+    font-size: 18px;
     width: 96px;
     height: 41px;
     outline: none;
     border: none;
     margin: 0 15px 0 15px;
+    cursor: pointer;
   }
 }
