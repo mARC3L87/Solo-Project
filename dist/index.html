@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solo-Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="vendor/icons/icon-font/css/Glyphter.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rwn6nym.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <section class="nav nav_wrapper">
+                <div class="wallet_wrapper">
+                    <div class="wallet_front">
+                        <i class="icon-wallet"></i>
+                        <span class="money">$1,500.00</span>
+                        <i class="icon-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="note_wrapper">
+                    <i class="icon-notification"></i>
+                </div>
+                <div class="profile_wrapper">
+                    <i class="icon-profile"></i>
+                    <span class="profile_text">Leonardo Dicaprio</span>
+                </div>
+                <div class="exit_wrapper">
+                    <i class="icon-quit"></i>
+                </div>
+            </section>
+            <section class="side side_wrapper">
+                <div class="side_logo">
+                    <img src="images/logo@1X.png" alt="logo">
+                    <i class="fas fa-bars hamburger"></i>
+                </div>
+                <div class="side_links">
+                    <ul class="bar_links">
+                        <li class="general"><i class="icon-general"></i><a href="#general">General</a></li>
+                        <li><i class="icon-details"></i><a href="#details">Details</a></li>
+                        <li class="link"><i class="icon-links"></i><a href="#links">Links</a></li>
+                        <li><i class="icon-banners"></i><a href="#banners">Banners</a></li>
+                        <li><i class="icon-personaldata"></i><a href="#personal">Personal Data</a></li>
+                        <li><i class="icon-payout"></i><a href="#payout">Payout</a></li>
+                        <li><i class="icon-postback"></i><a href="#postback">Postback</a></li>
+                    </ul>
+                </div>
+                <div class="side_manager">
+                    <h2 class="head_manager">YOUR MANAGER</h2>
+                    <img src="images/photo@1X.png" alt="manager" id="managerPhoto">
+                    <span class="manager_name">Mikhael E.</span>
+                </div>
+            </section>
+            <section class="main-1 main-1_wrapper">
+                <div class="main_title">
+                    <h2>GENERAL STATISTIC</h2>
+                </div>
+                <div class="date_filter">
+                    <div class="input_wrapper">
+                        <input type="text" value="16.05.2020">
+                        <input type="text" value="16.05.2020">
+                        <i class="icon-calendar"></i>
+                    </div>
+                <a href="#" class="btn btn_refresh"><i class="icon-refresh"></i></a>
+                </div>
+                <div class="main_columns">
+                    <div class="first_column">
+                        <div class="visit_column">
+                            <h2>Visit Signups</h2>
+                            <span>124</span>
+                        </div>
+                        <div class="ftd_column">
+                            <h2>FTD</h2>
+                            <span>445</span>
+                        </div>
+                    </div>
+                    <div class="second_column">
+                        <div class="net_column">
+                            <h2>Net Deposit</h2>
+                            <span>564</span>
+                        </div>
+                        <div class="turn_column">
+                            <h2>Turn Over</h2>
+                            <span>432</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_chart">
+                    <h2>Earnings chart</h2>
+                    <canvas class="chart" id="myChart"></canvas>
+                </div>
+            </section>
+            <section class="main-2 main-2_wrapper content" id="general">
+                <div class="corner_title">
+                    <h2>Links</h2>
+                </div>
+                <a href="#" class="btn btn_top">+ add new</a>
+                <div class="main_links">
+                    <div class="row row_link-1">
+                        <h2>Home page</h2>
+                        <a href="#">http://homepage.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-2">
+                        <h2>Currently offer</h2>
+                        <a href="#">http://currentlyoffer.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-3">
+                        <h2>Blurpix</h2>
+                        <a href="#">http://blurpix.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-4">
+                        <h2>Your site</h2>
+                        <a href="#">http://yoursite.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-5">
+                        <h2>Google</h2>
+                        <a href="#">http://google.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-6">
+                        <h2>Facebook</h2>
+                        <a href="#">http://facebook.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-7">
+                        <h2>Dashboard</h2>
+                        <a href="#">http://dashboard.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-8">
+                        <h2>Blurax</h2>
+                        <a href="#">http://blurax.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-9">
+                        <h2>Piece of wine</h2>
+                        <a href="#">http://pieceofwine.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-10">
+                        <h2>Twitter</h2>
+                        <a href="#">http://twitter.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn_bottom">+ add new</a>
+            </section>
+            <section class="links links_wrapper content" id="links">
+                <div class="corner_title">
+                    <h2>LINKS</h2>
+                </div>
+                <a href="#" class="btn btn_top">+ add new</a>
+                <div class="main_links">
+                    <div class="row row_link-1">
+                        <h2>Home page</h2>
+                        <a href="#">http://homepage.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-2">
+                        <h2>Currently offer</h2>
+                        <a href="#">http://currentlyoffer.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-3">
+                        <h2>Blurpix</h2>
+                        <a href="#">http://blurpix.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-4">
+                        <h2>Your site</h2>
+                        <a href="#">http://yoursite.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-5">
+                        <h2>Google</h2>
+                        <a href="#">http://google.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-6">
+                        <h2>Facebook</h2>
+                        <a href="#">http://facebook.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-7">
+                        <h2>Dashboard</h2>
+                        <a href="#">http://dashboard.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-8">
+                        <h2>Blurax</h2>
+                        <a href="#">http://blurax.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-9">
+                        <h2>Piece of wine</h2>
+                        <a href="#">http://pieceofwine.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-10">
+                        <h2>Twitter</h2>
+                        <a href="#">http://twitter.com</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn_bottom">+ add new</a>
+            </section>
+            <section class="banners banners_wrapper content" id="banners">
+                <div class="corner_title">
+                    <h2>BANNERS</h2>
+                </div>
+                <a href="#" class="btn btn_top">+ add new</a>
+                <div class="main_links">
+                    <div class="row row_link-1">
+                        <h2>Banner main</h2>
+                        <a href="#">http://www.website.com/bannermain.gif</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-2">
+                        <h2>Sign up banner</h2>
+                        <a href="#">http://www.website.com/signup.gif</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-3">
+                        <h2>Banner left side</h2>
+                        <a href="#">http://www.website.com/leftside.gif</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-4">
+                        <h2>Vertical banner</h2>
+                        <a href="#">http://www.website.com/vert.gif</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-5">
+                        <h2>Front</h2>
+                        <a href="#">http://www.website.com/front.gif</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                    <div class="row row_link-6">
+                        <h2>Horizontal banner</h2>
+                        <a href="#">http://www.website.com/horizontal.gif</a>
+                        <div class="list_icon">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn_bottom">+ add new</a>
+            </section>
+            <section class="personal personal_wrapper content" id="personal">
+                <div class="corner_title">
+                    <h2>PERSONAL DATA</h2>
+                </div>
+                <form method="POST" class="personal_form">
+                    <div class="general_filed">
+                        <div class="names">
+                            <label for="fname">Name</label> 
+                            <input type="text" name="first-name" value="Leonardo" id="fname">
+                        </div>
+                        <div class="names">
+                            <label for="lname">Surname</label>
+                            <input type="text" name="last-name" value="Dicaprio" id="lname">
+                        </div>  
+                        <div class="names">
+                            <label for="mail">E-mail</label>
+                            <input type="email" name="email" value="leo@gmail.com" id="mail">
+                        </div> 
+                        <div class="names">
+                            <label for="cell">Phone number</label>
+                            <input type="tel" name="phone" value="+1 432 555 00 44" id="cell">
+                        </div>                                
+                    </div>
+                    <div class="general_filed online">
+                        <div class="names">
+                            <label for="Skype">Skype</label>
+                            <input type="text" name="skype" value="Leonardo.D" id="Skype">
+                        </div>
+                        <div class="names">
+                            <label for="icq">ICQ</label>
+                            <input type="text" name="icq" id="icq">
+                        </div>
+                        <div class="names">
+                            <label for="MSN">Msn</label>
+                            <input type="text" name="msn" id="MSN">
+                        </div>
+                    </div>
+                    <div class="general_filed wallet">
+                        <div class="names">
+                            <label for="money">Wallet</label>
+                            <input type="text" name="wallet" id="money">
+                        </div>
+                    </div>
+                    <div class="general_filed pass">
+                        <div class="names">
+                            <label for="lock">Password</label>
+                            <input type="password" name="password" id="lock">
+                        </div>
+                        <div class="names">
+                            <label for="confirm">Repeat</label>
+                            <input type="password" name="repeat" id="confirm">
+                        </div>
+                    </div>
+                    <button type="submit" class="sub_btn">Save</button>
+                </form>
+            </section>
+            <section class="details details_wrapper content" id="details">
+                <div class="main_title">
+                    <h2>DETAIL STATISTIC</h2>
+                </div>
+                <div class="date_filter">
+                    <div class="input_wrapper">
+                        <input type="text" value="16.05.2020">
+                        <input type="text" value="16.05.2020">
+                        <i class="icon-calendar"></i>
+                    </div>
+                    <a href="#" class="btn btn_refresh"><i class="icon-refresh"></i></a>
+                </div>
+                <div class="scroll-wrapper">
+                    <table>
+                        <tr>
+                            <th>Tracker name</th>
+                            <th>Initiated date</th>
+                            <th>Visists</th>
+                            <th>Unique</th>
+                            <th>Signups</th>
+                            <th>FTD</th>
+                            <th>Depositors</th>
+                            <th>Deposists($)</th>
+                            <th>Payout($)</th>
+                            <th>Turnover</th>
+                            <th>Deal</th>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/sam_test</td>
+                            <td>17/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,425.00</td>
+                            <td>234.00</td>
+                            <td>421,342.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>aff/leo_test</td>
+                            <td>15/08/02(12:58)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>29,436.00</td>
+                            <td>941.00</td>
+                            <td>784,435.00</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <i class="icon-arrow-left"></i>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                    </ul>
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </section>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal login" id="login-pop">
+                <div class="btn-close js--close-modal"></div>
+                <div class="corner_title">
+                    <h2>LOGIN</h2>
+                </div>
+                <form class="login_form">
+                    <i class="icon-personaldata icon_login"></i>
+                    <input type="text" name="login-name" placeholder="login name">
+                    <i class="icon-password icon_key"></i>
+                    <input type="password" name="key-pass" placeholder="password">
+                    <button class="js--close-modal btn-login">Enter</button>
+                </form>
+            </div>
+            <div class="modal quit" id="quit-pop">
+                <div class="corner_title">
+                    <h2>Do you really want to Quit?</h2>
+                </div>
+                <div class="btn_quit_container">
+                    <button class="js--close-modal btn-cancel">Cancel</button>
+                    <button class="js--close-modal btn-quit">Quit</button>
+                </div>
+            </div>
+            <div class="modal message" id="message-pop">
+                <div class="btn-close js--close-modal"></div>
+                <div class="corner_title">
+                    <h2>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h2>
+                </div>
+                <div class="manager_view">
+                    <img src="images/userpic@1X.png" alt="userpic">
+                    <div class="name_box">
+                        <h1>Michael E.</h1>
+                        <p>online</p>
+                    </div>
+                </div>
+                <div class="message_container">
+                    <span class="bubble_manager">Hello. Can I help you?</span>
+                    <span class="bubble_customer"> Hello. I would like to know about Postback</span>
+                    <span class="bubble_manager">Ok. 5 min...</span>
+                </div>
+                <form class="message_form" method="POST">
+                    <i class="icon-message"></i>
+                    <input type="text" name="message" placeholder="Enter the message..">
+                    <button type="submit" class="btn_send">Send</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
