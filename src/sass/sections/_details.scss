@@ -1,7 +1,7 @@
 .details{
   background-color: #FFFFFF;
   grid-area: 2 / 2 / 3 / span 4;
-  height: 799px;
+  height: 700px;
   margin: 80px 18px 21px 18px;
        
   @include responsive(phone){
@@ -11,8 +11,6 @@
 }
   
 .details_wrapper{
-  display: flex;
-  flex-direction: column;
   z-index: 1;
 }
 
@@ -69,7 +67,7 @@ tr{
   width: 394px;
   height: 41px;
   justify-content: space-between;
-  margin: auto;
+  margin: 30px auto;
   align-items: center;
 
   @include responsive(phone){

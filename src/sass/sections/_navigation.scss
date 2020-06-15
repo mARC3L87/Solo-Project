@@ -11,6 +11,7 @@
     position: unset;
     flex-wrap: wrap;
     height: 100%;
+    display: none;
   }
 }
 
@@ -98,6 +99,7 @@
   @include nav_flex(row, center, flex-start); 
   width: 38px;
   margin-left: 21px;
+  cursor: pointer;
 
   i{
     color: #9C9C9C;

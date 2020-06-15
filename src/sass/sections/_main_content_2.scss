@@ -1,10 +1,17 @@
 .main-2_wrapper{
-  display: flex;
-  flex-direction: column;
+  background-color: #FFFFFF;
+  height: 805px;
+  margin: 70px 0 20px;
+
+  @include responsive(phone){
+    margin: 0;
+  }
 }
 
 .corner_title{
-  height: 28px;
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-bottom: #E3E3E3 2px solid;
   margin: 20px 0 0 0;
 
@@ -12,7 +19,7 @@
     @include font-header();
     font-size: 16px;
     color: #A6A6A6;
-    padding: 0 0 14px 19px;
+    padding: 0 0 0 19px;
     margin: 0;
   }
 }
@@ -22,6 +29,7 @@
   width: 127px;
   height: 41px;
   margin: 22px auto 23px;
+  display: flex;
 }
 
 a{
@@ -36,6 +44,7 @@ a{
   width: 127px;
   height: 41px;
   margin: 22px auto 26px;
+  display: flex;
 }
 
 a{
@@ -47,7 +56,6 @@ a{
 
 .main_links{
   width: 689px;
-  height: 584px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -63,10 +71,6 @@ a{
     padding-top: 22px;
     justify-content: space-between;
     position: relative;
-
-    @include responsive(phone){
-      height: 100%;
-    }
 
     &:last-child{
       border-bottom: #E3E3E3 2px solid;

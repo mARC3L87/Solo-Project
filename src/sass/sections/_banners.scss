@@ -1,18 +1,17 @@
 .banners{
   background-color: #FFFFFF;
   grid-area: 2 / 2 / 3 / span 4;
-  height: 799px;
+  height: 570px;
   margin: 80px 18px 21px 18px;
           
   @include responsive(phone){
     grid-area: 2 / 1 / 3 / span 4;
     margin: 42px 0 21px 0;
+    width: 425px;
   }
 }
   
 .banners_wrapper{
-  display: flex;
-  flex-direction: column;
   z-index: 1;
 
   @include responsive(phone){

@@ -84,10 +84,6 @@
   }
 }
 
-.general{
-  cursor: pointer;
-}
-
 .side_manager{
   display: flex;
   height: 102px;
@@ -123,4 +119,8 @@
     left: 73px;
     top: 74px;
   }
+}
+
+.top-bar{
+  display: none;
 }
